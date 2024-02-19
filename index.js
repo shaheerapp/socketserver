@@ -11,6 +11,7 @@ const port = 9000;
 
 app.get('/', (req, res) => {
     res.send('Welcome to my Node.js server!');
+    console.log('Server script is running...');
 });
 
 
