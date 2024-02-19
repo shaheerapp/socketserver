@@ -9,6 +9,10 @@ const server = createServer(app);
 const io = new Server(server);
 const port = 9000;
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my Node.js server!');
+});
+
 
 
 io.on('connection', async (socket) => {
