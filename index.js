@@ -7,7 +7,7 @@ import { Server } from 'socket.io';
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
-const port = 9000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.send('Welcome to my Node.js server!');
