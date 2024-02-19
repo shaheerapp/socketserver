@@ -46,7 +46,6 @@ io.on('connection', async (socket) => {
         }
 
     });
-    res.send('Welcome to Socket.io server!');
 });
 
 server.listen(port, () => {
